@@ -7,6 +7,7 @@ children:
   - preferences.md
   - patterns.md
   - improvements.md
+  - external-skill-sources.md
 ---
 
 # Memory
@@ -37,3 +38,4 @@ children:
 | [preferences.md](preferences.md) | Confirmed user preferences |
 | [patterns.md](patterns.md) | Recurring patterns (3+ occurrences) |
 | [improvements.md](improvements.md) | Gaps and pending improvements |
+| [external-skill-sources.md](external-skill-sources.md) | Attribution for imported third-party skills |
