@@ -53,10 +53,14 @@ The setup wizard will ask about your name, role, communication style, and tools 
 ### 3. Start using it
 
 ```
-/standup    # Morning briefing — scan todos, plan the day
-/review     # Quick check-in — what needs attention?
-/eod        # End of day — capture learnings, prep tomorrow
-/learn      # Self-improvement — prune, evolve, grow new agents
+/standup        # Morning briefing — scan todos, plan the day
+/review         # Quick check-in — what needs attention?
+/eod            # End of day — capture learnings, prep tomorrow
+/learn          # Self-improvement — prune, evolve, grow new agents
+/handoff        # Compact the session into a handoff doc for the next agent
+/grill-me       # Stress-test a plan; resolve every branch of the decision tree
+/caveman        # Ultra-compressed reply mode (~75% fewer tokens)
+/write-a-skill  # Author a new skill with the right frontmatter + conventions
 ```
 
 ## How It Works
@@ -146,12 +150,16 @@ agent-seed/
 │   │   ├── todo-manager.md       # Daily todos
 │   │   └── reflection.md         # Self-improvement engine
 │   ├── skills/                   # Slash commands
-│   │   ├── setup/SKILL.md        # /setup wizard
-│   │   ├── standup/SKILL.md      # Morning briefing
-│   │   ├── eod/SKILL.md          # End of day
-│   │   ├── review/SKILL.md       # Quick check-in
-│   │   ├── learn/SKILL.md        # Self-improvement
-│   │   └── update-todos/SKILL.md # Interactive todo review
+│   │   ├── setup/SKILL.md         # /setup wizard
+│   │   ├── standup/SKILL.md       # Morning briefing
+│   │   ├── eod/SKILL.md           # End of day
+│   │   ├── review/SKILL.md        # Quick check-in
+│   │   ├── learn/SKILL.md         # Self-improvement
+│   │   ├── update-todos/SKILL.md  # Interactive todo review
+│   │   ├── handoff/SKILL.md       # Session handoff doc (mattpocock)
+│   │   ├── grill-me/SKILL.md      # Plan stress-test (mattpocock)
+│   │   ├── caveman/SKILL.md       # Ultra-compressed replies (mattpocock)
+│   │   └── write-a-skill/SKILL.md # New-skill authoring (mattpocock)
 │   └── rules/                    # Scoped rules (load by file path)
 │       ├── todos.md
 │       ├── context.md
@@ -171,14 +179,22 @@ agent-seed/
 │   ├── learnings.md
 │   ├── preferences.md
 │   ├── patterns.md
-│   └── improvements.md
+│   ├── improvements.md
+│   └── external-skill-sources.md # Attribution for imported skills
 │
 ├── todos/                        # Daily task tracking
 │   └── _template.md
 │
+├── handoffs/                     # Session handoff docs (committed, never /tmp)
+│   └── YYYY-MM-DD-<slug>.md
+│
 └── scripts/
     └── check-markdown-policy.sh  # Enforces structure + size limits
 ```
+
+## Attribution
+
+Some skills are adapted from external sources. See [`memory/external-skill-sources.md`](memory/external-skill-sources.md) for full attribution and source links.
 
 ## Compatibility
 

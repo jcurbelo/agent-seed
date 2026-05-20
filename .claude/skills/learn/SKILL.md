@@ -43,6 +43,8 @@ Make any warranted changes to:
 - Skills (improved workflows)
 - `CLAUDE.md` (if rules need updating)
 
+When the gap calls for a brand-new skill (recurring user request with no matching slash command), invoke `/write-a-skill` to scaffold it with the right frontmatter, size limits, and README registration — don't hand-roll the SKILL.md.
+
 ## Step 6: Commit
 
 1. Create branch: `feat/learn-YYYY-MM-DD`
